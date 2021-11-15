@@ -34,7 +34,7 @@
                 android:layout_marginTop="16dp">
 
                 <Button
-                    android:id="@+id/bt_dialog_normal"
+                    android:id="@+id/btn_dialog_normal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -44,13 +44,13 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/bt_dialog_list"
+                    android:id="@+id/btn_permission"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="列表对话框"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/bt_dialog_custom_layout"
-                    app:layout_constraintStart_toEndOf="@+id/bt_dialog_normal"
+                    app:layout_constraintStart_toEndOf="@+id/btn_dialog_normal"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
@@ -71,7 +71,7 @@
                     android:layout_marginTop="16dp"
                     android:text="请输入参数:"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_dialog_normal" />
+                    app:layout_constraintTop_toBottomOf="@+id/btn_dialog_normal" />
 
                 <EditText
                     android:id="@+id/et_param"
@@ -81,7 +81,7 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     app:layout_constraintStart_toEndOf="@+id/tv_label_param"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_dialog_list" />
+                    app:layout_constraintTop_toBottomOf="@+id/btn_permission" />
 
                 <Button
                     android:id="@+id/bt_dialog_param"

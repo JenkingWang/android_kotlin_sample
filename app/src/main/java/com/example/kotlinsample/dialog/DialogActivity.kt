@@ -8,16 +8,12 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Gravity
 import android.view.View
-import android.view.Window
-import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
-import androidx.fragment.app.FragmentManager
 import com.example.kotlinsample.R
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class DialogActivity : AppCompatActivity(), DialogNoticeFragment.NoticeDialogListener {
 
@@ -31,7 +27,7 @@ class DialogActivity : AppCompatActivity(), DialogNoticeFragment.NoticeDialogLis
         /**
          * 点击普通dialog
          */
-        val btnDialogNormal: Button = findViewById(R.id.bt_dialog_normal)
+        val btnDialogNormal: Button = findViewById(R.id.btn_dialog_normal)
         btnDialogNormal.setOnClickListener {
             DialogNormalFragment().show(supportFragmentManager, "dialog_normal")
         }
@@ -39,7 +35,7 @@ class DialogActivity : AppCompatActivity(), DialogNoticeFragment.NoticeDialogLis
         /**
          * 点击列表dialog
          */
-        val btnDialogList: Button = findViewById(R.id.bt_dialog_list)
+        val btnDialogList: Button = findViewById(R.id.btn_permission)
         btnDialogList.setOnClickListener {
             DialogListFragment().show(supportFragmentManager, "dialog_list")
         }
