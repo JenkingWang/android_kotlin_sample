@@ -15,6 +15,11 @@ import com.example.kotlinsample.R
 
 const val PERMISSION_REQUEST_MULTIPLE = 0
 
+/**
+ * @author Jenking Wang
+ * date: 2021/11/15
+ */
+
 class PermissionActivity : AppCompatActivity() {
 
 

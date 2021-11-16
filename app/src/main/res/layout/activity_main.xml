@@ -50,16 +50,16 @@
                     android:layout_height="wrap_content"
                     android:text="权限"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/bt_dialog_custom_layout"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_camera"
                     app:layout_constraintStart_toEndOf="@+id/btn_dialog_normal"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/bt_dialog_custom_layout"
+                    android:id="@+id/btn_camera"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    android:text="占位2"
+                    android:text="相机"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />

@@ -4,8 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.kotlinsample.camera.CameraActivity
 import com.example.kotlinsample.dialog.DialogActivity
 import com.example.kotlinsample.permission.PermissionActivity
+
+/**
+ * @author Jenking Wang
+ * date 2021/11/15
+ */
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,6 +38,15 @@ class MainActivity : AppCompatActivity() {
         btnPermission.setOnClickListener {
             val intentPermission = Intent(this, PermissionActivity::class.java)
             startActivity(intentPermission)
+        }
+
+        /**
+         * 点击相机
+         */
+        val btnCamera: Button = findViewById(R.id.btn_camera)
+        btnCamera.setOnClickListener {
+            val intentCamera = Intent(this, CameraActivity::class.java)
+            startActivity(intentCamera)
         }
     }
 }

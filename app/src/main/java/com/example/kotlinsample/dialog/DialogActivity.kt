@@ -15,6 +15,11 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import com.example.kotlinsample.R
 
+/**
+ * @author Jenking Wang
+ * date 2021/11/15
+ */
+
 class DialogActivity : AppCompatActivity(), DialogNoticeFragment.NoticeDialogListener {
 
     /**
@@ -60,7 +65,7 @@ class DialogActivity : AppCompatActivity(), DialogNoticeFragment.NoticeDialogLis
         /**
          * 点击自定义布局dialog
          */
-        val btnDialogCustomLayout: Button = findViewById(R.id.bt_dialog_custom_layout)
+        val btnDialogCustomLayout: Button = findViewById(R.id.btn_camera)
         btnDialogCustomLayout.setOnClickListener {
             DialogCustomLayoutFragment().show(supportFragmentManager, "dialog_custom_layout")
         }
