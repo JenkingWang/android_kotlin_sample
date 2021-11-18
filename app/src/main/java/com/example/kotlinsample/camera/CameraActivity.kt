@@ -10,6 +10,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
+import android.os.ParcelFileDescriptor
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.Button
@@ -84,7 +85,7 @@ class CameraActivity : AppCompatActivity() {
         }
 
     /**
-     * 打开相机intent获取完整图片uri回调launcher
+     * 打开相机intent获取完整图片uri回调launcher,有两个ImageView，根据pictureType为3和4区分
      */
     val requestCameraOriginLauncher =
         registerForActivityResult(
@@ -109,6 +110,30 @@ class CameraActivity : AppCompatActivity() {
                 }
                 else -> {
                     Toast.makeText(this, "相机应用调用失败", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
+    /**
+     * 选取照片回调launcher
+     */
+    val requestPickPictureLauncher =
+        registerForActivityResult(
+            ActivityResultContracts.StartActivityForResult()
+        ) {
+            when (it.resultCode) {
+                Activity.RESULT_OK -> {
+                    val uri: Uri? = it.data?.data
+                    val ivPhotoShow5: ImageView = findViewById(R.id.iv_photo_show_5)
+
+                    val pfd: ParcelFileDescriptor? = contentResolver.openFileDescriptor(uri!!, "r")
+                    if (pfd != null) {
+                        val bitmap = BitmapFactory.decodeFileDescriptor(pfd.fileDescriptor)
+                        ivPhotoShow5.setImageBitmap(bitmap)
+                    }
+                }
+                else -> {
+                    Toast.makeText(this, "选取图片调用失败", Toast.LENGTH_SHORT).show()
                 }
             }
         }
@@ -198,6 +223,18 @@ class CameraActivity : AppCompatActivity() {
     }
 
     /**
+     * 打开选取照片intent，获取照片
+     */
+    private fun startPickPicture() {
+        Intent(Intent.ACTION_PICK).also { pickPictureIntent ->
+            pickPictureIntent.setType("image/*")
+            pickPictureIntent.resolveActivity(packageManager)?.also {
+                requestPickPictureLauncher.launch(pickPictureIntent)
+            }
+        }
+    }
+
+    /**
      * onCreate方法
      */
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -259,6 +296,14 @@ class CameraActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "你未授权相机权限，功能无法使用", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        /**
+         * 点击选取图片
+         */
+        val btnPickPicture: Button = findViewById(R.id.btn_pick_picture)
+        btnPickPicture.setOnClickListener {
+            startPickPicture()
         }
     }
 }

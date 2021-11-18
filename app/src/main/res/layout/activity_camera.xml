@@ -24,7 +24,7 @@
         android:text="相机调用缩略图1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_photo_show_3" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_photo_show_5" />
 
     <ImageView
         android:id="@+id/iv_photo_show_2"
@@ -75,8 +75,25 @@
         android:id="@+id/iv_photo_show_4"
         android:layout_width="100dp"
         android:layout_height="150dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/iv_photo_show_3"
         app:layout_constraintTop_toTopOf="@+id/iv_photo_show_3"
+        app:srcCompat="@mipmap/sample" />
+
+    <Button
+        android:id="@+id/btn_pick_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="选取图片"
+        app:layout_constraintStart_toStartOf="@+id/btn_start_camera_1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start_camera_4" />
+
+    <ImageView
+        android:id="@+id/iv_photo_show_5"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_photo_show_4"
+        app:layout_constraintTop_toTopOf="@+id/iv_photo_show_4"
         app:srcCompat="@mipmap/sample" />
 </androidx.constraintlayout.widget.ConstraintLayout>
