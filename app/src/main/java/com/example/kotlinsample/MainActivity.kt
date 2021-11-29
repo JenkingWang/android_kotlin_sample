@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.kotlinsample.camera.CameraActivity
 import com.example.kotlinsample.dialog.DialogActivity
+import com.example.kotlinsample.layout.LinearLayoutActivity
 import com.example.kotlinsample.permission.PermissionActivity
 
 /**
@@ -47,6 +48,15 @@ class MainActivity : AppCompatActivity() {
         btnCamera.setOnClickListener {
             val intentCamera = Intent(this, CameraActivity::class.java)
             startActivity(intentCamera)
+        }
+
+        /**
+         * 点击布局
+         */
+        val btnLayout: Button = findViewById(R.id.btn_layout)
+        btnLayout.setOnClickListener {
+            val intent = Intent(this, LinearLayoutActivity::class.java)
+            startActivity(intent)
         }
     }
 }
