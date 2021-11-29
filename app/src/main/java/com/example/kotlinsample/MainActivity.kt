@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.kotlinsample.camera.CameraActivity
 import com.example.kotlinsample.dialog.DialogActivity
-import com.example.kotlinsample.layout.LinearLayoutActivity
+import com.example.kotlinsample.layout.LayoutActivity
 import com.example.kotlinsample.permission.PermissionActivity
 
 /**
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
          */
         val btnLayout: Button = findViewById(R.id.btn_layout)
         btnLayout.setOnClickListener {
-            val intent = Intent(this, LinearLayoutActivity::class.java)
+            val intent = Intent(this, LayoutActivity::class.java)
             startActivity(intent)
         }
     }

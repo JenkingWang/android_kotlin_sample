@@ -17,6 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinSample">
         <activity
+            android:name=".layout.LayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layout.RelativeLayoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".layout.LinearLayoutVerticalWeightActivity"
             android:exported="false" />
         <activity
