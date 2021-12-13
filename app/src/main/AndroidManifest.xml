@@ -17,6 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinSample">
         <activity
+            android:name=".view.ButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".layout.ConstraintLayoutActivity"
             android:exported="false" />
         <activity
@@ -55,6 +61,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.kotlinsample.fileprovider"

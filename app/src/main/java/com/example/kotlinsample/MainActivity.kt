@@ -8,6 +8,7 @@ import com.example.kotlinsample.camera.CameraActivity
 import com.example.kotlinsample.dialog.DialogActivity
 import com.example.kotlinsample.layout.LayoutActivity
 import com.example.kotlinsample.permission.PermissionActivity
+import com.example.kotlinsample.view.ViewActivity
 
 /**
  * @author Jenking Wang
@@ -56,6 +57,15 @@ class MainActivity : AppCompatActivity() {
         val btnLayout: Button = findViewById(R.id.btn_layout)
         btnLayout.setOnClickListener {
             val intent = Intent(this, LayoutActivity::class.java)
+            startActivity(intent)
+        }
+
+        /**
+         * 点击控件
+         */
+        val btnView: Button = findViewById(R.id.btn_view)
+        btnView.setOnClickListener {
+            val intent = Intent(this, ViewActivity::class.java)
             startActivity(intent)
         }
     }
