@@ -7,6 +7,7 @@ import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
@@ -17,6 +18,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import com.example.kotlinsample.R
@@ -44,10 +46,23 @@ class CameraActivity : AppCompatActivity() {
     /**
      * 调用相机权限,launcher回调
      */
+    @RequiresApi(Build.VERSION_CODES.N)
     val requestPermissionCameraLauncher =
         registerForActivityResult(
             ActivityResultContracts.RequestMultiplePermissions()
         ) {
+            /*permissions ->
+            when {
+                permissions.getOrDefault(Manifest.permission.CAMERA, false) -> {
+                    // 同意了相机权限
+                }
+                permissions.getOrDefault(Manifest.permission.WRITE_EXTERNAL_STORAGE, false) -> {
+                    // 同意了存储权限
+                }
+                else -> {
+                    // 没有同意
+                }
+            }*/
             for ((permissionItemKey, permissionItemValue) in it) {
                 if (permissionItemValue) {
 

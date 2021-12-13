@@ -28,5 +28,14 @@ class LayoutActivity : AppCompatActivity() {
             val intent = Intent(this, RelativeLayoutActivity::class.java)
             startActivity(intent)
         }
+
+        /**
+         * 点击约束布局
+         */
+        val btnConstraintLayout: Button = findViewById(R.id.btn_constraint_layout)
+        btnConstraintLayout.setOnClickListener {
+            val intent = Intent(this, ConstraintLayoutActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
