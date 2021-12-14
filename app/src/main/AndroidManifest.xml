@@ -17,6 +17,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinSample">
         <activity
+            android:name=".view.PickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.SpinnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.SwitchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.RadioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.CheckBoxActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.ButtonActivity"
             android:exported="false" />
         <activity

@@ -15,4 +15,49 @@
         android:text="按钮"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_view_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="复选框"
+        app:layout_constraintStart_toEndOf="@+id/btn_view_button"
+        app:layout_constraintTop_toTopOf="@+id/btn_view_button" />
+
+    <Button
+        android:id="@+id/btn_view_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="单选按钮"
+        app:layout_constraintStart_toEndOf="@+id/btn_view_checkbox"
+        app:layout_constraintTop_toTopOf="@+id/btn_view_checkbox" />
+
+    <Button
+        android:id="@+id/btn_view_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="开关按钮"
+        app:layout_constraintStart_toStartOf="@+id/btn_view_button"
+        app:layout_constraintTop_toBottomOf="@+id/btn_view_button" />
+
+    <Button
+        android:id="@+id/btn_view_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="微调框"
+        app:layout_constraintStart_toEndOf="@+id/btn_view_switch"
+        app:layout_constraintTop_toTopOf="@+id/btn_view_switch" />
+
+    <Button
+        android:id="@+id/btn_view_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="选择器"
+        app:layout_constraintStart_toEndOf="@+id/btn_view_spinner"
+        app:layout_constraintTop_toTopOf="@+id/btn_view_spinner" />
 </androidx.constraintlayout.widget.ConstraintLayout>
