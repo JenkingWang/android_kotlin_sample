@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Kotlin Sample</string>
+
+    <!-- 相机 -->
+    <string name="camera_access_required">相机预览需要开启相机访问。</string>
+    <string name="ok">好的</string>
+    <string name="camera_permission_not_available">相机权限不可用，请求相机权限。</string>
+    <string name="camera_permission_available">相机权限可用，开启预览。</string>
+    <string name="camera_permission_granted">相机权限被授予。启动预览。</string>
+    <string name="camera_permission_denied">相机权限请求被拒绝。</string>
+    <string name="camera_unavailable">相机不可用。</string>
+
+    <!-- 权限 -->
+    <string name="permission_intro">这是权限相关示例。\n可以有两种方式来申请权限，一种是继承ActivityCompat.OnRequestPermissionsResultCallback接口，一种是通过Launcher。
+    最优策略是在当前操作用到权限时再去申请，如需申请多个权限，可以分步进行。</string>
+    <string name="permission_implement_intro">这里是通过继承ActivityCompat.OnRequestPermissionsResultCallback接口来请求权限</string>
+    <string name="permision_implement_button_start_camera">开启相机预览</string>
+    <string name="permission_button_implement_show">继承接口申请权限示例</string>
+    <string name="permission_button_launcher_show">Launcher申请权限示例</string>
+    <string name="permission_button_multiple_show">申请多个权限示例</string>
 </resources>

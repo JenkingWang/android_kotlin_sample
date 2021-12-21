@@ -7,7 +7,7 @@ import android.widget.Button
 import com.example.kotlinsample.camera.CameraActivity
 import com.example.kotlinsample.dialog.DialogActivity
 import com.example.kotlinsample.layout.LayoutActivity
-import com.example.kotlinsample.permission.PermissionActivity
+import com.example.kotlinsample.permission.PermissionListActivity
 import com.example.kotlinsample.view.ViewActivity
 
 /**
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
          */
         val btnPermission: Button = findViewById(R.id.btn_permission)
         btnPermission.setOnClickListener {
-            val intentPermission = Intent(this, PermissionActivity::class.java)
+            val intentPermission = Intent(this, PermissionListActivity::class.java)
             startActivity(intentPermission)
         }
 
