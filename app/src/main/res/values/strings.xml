@@ -10,6 +10,12 @@
     <string name="camera_permission_denied">相机权限请求被拒绝。</string>
     <string name="camera_unavailable">相机不可用。</string>
 
+    <!-- 存储 -->
+    <string name="write_external_storage_permission_granted">外部存储权限被授予</string>
+    <string name="write_external_storage_permission_available">外部存储权限可用</string>
+    <string name="write_external_storage_access_required">需要开启外部存储权限</string>
+    <string name="write_external_storage_permission_not_available">外部存储权限不可用，请求权限</string>
+
     <!-- 权限 -->
     <string name="permission_intro">这是权限相关示例。\n可以有两种方式来申请权限，一种是继承ActivityCompat.OnRequestPermissionsResultCallback接口，一种是通过Launcher。
     最优策略是在当前操作用到权限时再去申请，如需申请多个权限，可以分步进行。</string>
@@ -20,4 +26,6 @@
     <string name="permission_button_multiple_show">申请多个权限示例</string>
     <string name="permission_launcher_intro">这是通过launcher申请权限的示例</string>
     <string name="permission_launcher_button_start_camera">开启相机预览</string>
+    <string name="permission_multiple_intro">这是一个一次申请多个权限的示例，采用分步方式实现。</string>
+    <string name="permission_multiple_button_start_camera">开启相机预览</string>
 </resources>

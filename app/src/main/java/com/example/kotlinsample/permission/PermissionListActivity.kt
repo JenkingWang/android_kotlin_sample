@@ -22,11 +22,13 @@ class PermissionListActivity :
         when (v?.id) {
             R.id.btn_permission_implement -> startActivity(Intent(this, PermissionImplementActivity::class.java))
             R.id.btn_permission_launcher -> startActivity(Intent(this, PermissionLauncherActivity::class.java))
+            R.id.btn_permission_multiple -> startActivity(Intent(this, PermissionMultipleActivity::class.java))
         }
     }
 
     private fun initClickEvent() {
         findViewById<Button>(R.id.btn_permission_implement).setOnClickListener(this)
         findViewById<Button>(R.id.btn_permission_launcher).setOnClickListener(this)
+        findViewById<Button>(R.id.btn_permission_multiple).setOnClickListener(this)
     }
 }

@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinSample">
         <activity
+            android:name=".permission.PermissionMultipleActivity"
+            android:exported="false" />
+        <activity
             android:name=".permission.PermissionLauncherActivity"
             android:exported="false" />
         <activity
