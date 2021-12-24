@@ -17,6 +17,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinSample">
         <activity
+            android:name=".file.ExternalFilesDirActivity"
+            android:exported="false" />
+        <activity
+            android:name=".file.FilesDirActivity"
+            android:exported="false" />
+        <activity
+            android:name=".file.FileActivity"
+            android:exported="false" />
+        <activity
             android:name=".permission.PermissionMultipleActivity"
             android:exported="false" />
         <activity

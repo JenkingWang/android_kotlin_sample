@@ -28,4 +28,34 @@
     <string name="permission_launcher_button_start_camera">开启相机预览</string>
     <string name="permission_multiple_intro">这是一个一次申请多个权限的示例，采用分步方式实现。</string>
     <string name="permission_multiple_button_start_camera">开启相机预览</string>
+
+    <!-- MainActivity -->
+    <string name="main_intro">示例主题列表</string>
+    <string name="main_button_dialog">对话框</string>
+    <string name="main_button_permission">权限</string>
+    <string name="main_button_camera">相机</string>
+    <string name="main_button_layout">布局</string>
+    <string name="main_button_view">控件</string>
+    <string name="main_button_file">文件</string>
+
+    <!-- FileActivity -->
+    <string name="file_intro">这是用户数据和文件相关的示例。存储空间分为内部存储空间和外部存储空间，每一个空间又包含两个目录，一个是持久性文件目录，一个是缓存目录。</string>
+    <string name="file_button_files_dir">内部空间</string>
+    <string name="file_button_external_files_dir">外部空间</string>
+    <string name="filesdir_infro">这是内部空间的示例</string>
+    <string name="filesdir_button_showdir">显示内部空间目录路径</string>
+    <string name="filesdir_button_write">写入一个文本文件</string>
+    <string name="filesdir_button_read">读取文本文件</string>
+    <string name="filesdir_button_list">查看文件列表</string>
+    <string name="filesdir_button_create_dir">创建子目录</string>
+    <string name="filesdir_button_create_tmp_file">创建临时文件</string>
+    <string name="filesdir_button_delete_tmp_file">删除临时文件</string>
+    <string name="externalfilesdir_intro">这是外部空间的示例</string>
+    <string name="externalfilesdir_button_state">验证外部空间状态</string>
+    <string name="externalfilesdir_showdir">显示外部空间目录路径</string>
+    <string name="externalfilesdir_create">创建文本文件</string>
+    <string name="externalfilesdir_read">读取文本文件</string>
+    <string name="externalfilesdir_create_cache_file">创建临时文件</string>
+    <string name="externalfilesdir_delete_cache_file">删除临时文件</string>
+
 </resources>

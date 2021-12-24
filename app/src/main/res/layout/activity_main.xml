@@ -24,10 +24,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
-                android:text="示例主题列表"
-                android:textSize="18dp"
+                android:gravity="center_horizontal"
+                android:text="@string/main_intro"
                 android:textColor="@color/black"
-                android:gravity="center_horizontal"/>
+                android:textSize="18sp" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -39,7 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="对话框"
+                    android:text="@string/main_button_dialog"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -48,7 +48,7 @@
                     android:id="@+id/btn_permission"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="权限"
+                    android:text="@string/main_button_permission"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/btn_camera"
                     app:layout_constraintStart_toEndOf="@+id/btn_dialog_normal"
@@ -59,7 +59,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    android:text="相机"
+                    android:text="@string/main_button_camera"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -70,16 +70,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="布局"
+                    android:text="@string/main_button_layout"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/btn_dialog_normal" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/btn_file"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    android:text="占位"
+                    android:text="@string/main_button_file"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/btn_camera"
                     app:layout_constraintTop_toTopOf="@+id/btn_view" />
@@ -88,7 +88,7 @@
                     android:id="@+id/btn_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="控件"
+                    android:text="@string/main_button_view"
                     app:layout_constraintStart_toStartOf="@+id/btn_permission"
                     app:layout_constraintTop_toTopOf="@+id/btn_layout" />
 
