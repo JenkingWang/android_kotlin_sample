@@ -11,10 +11,15 @@
     <string name="camera_unavailable">相机不可用。</string>
 
     <!-- 存储 -->
-    <string name="write_external_storage_permission_granted">外部存储权限被授予</string>
-    <string name="write_external_storage_permission_available">外部存储权限可用</string>
-    <string name="write_external_storage_access_required">需要开启外部存储权限</string>
-    <string name="write_external_storage_permission_not_available">外部存储权限不可用，请求权限</string>
+    <string name="write_external_storage_permission_granted">写入外部存储权限被授予</string>
+    <string name="write_external_storage_permission_available">写入外部存储权限可用</string>
+    <string name="write_external_storage_access_required">需要开启写入外部存储权限</string>
+    <string name="write_external_storage_permission_not_available">写入外部存储权限不可用，请求权限</string>
+    <string name="write_external_storage_permission_denied">写入外部存储权限请求被拒绝。</string>
+    <string name="read_external_storage_access_required">外部存储权限需要开启</string>
+    <string name="read_external_storage_permission_not_available">读取外部存储权限不可用，请求权限</string>
+    <string name="read_external_storage_permission_granted">读取外部存储权限被授予</string>
+    <string name="read_external_storage_permission_denied">读取外部存储权限请求被拒绝。</string>
 
     <!-- 权限 -->
     <string name="permission_intro">这是权限相关示例。\n可以有两种方式来申请权限，一种是继承ActivityCompat.OnRequestPermissionsResultCallback接口，一种是通过Launcher。
@@ -42,6 +47,7 @@
     <string name="file_intro">这是用户数据和文件相关的示例。存储空间分为内部存储空间和外部存储空间，每一个空间又包含两个目录，一个是持久性文件目录，一个是缓存目录。</string>
     <string name="file_button_files_dir">内部空间</string>
     <string name="file_button_external_files_dir">外部空间</string>
+    <string name="file_button_media">媒体</string>
     <string name="filesdir_infro">这是内部空间的示例</string>
     <string name="filesdir_button_showdir">显示内部空间目录路径</string>
     <string name="filesdir_button_write">写入一个文本文件</string>
@@ -57,5 +63,15 @@
     <string name="externalfilesdir_read">读取文本文件</string>
     <string name="externalfilesdir_create_cache_file">创建临时文件</string>
     <string name="externalfilesdir_delete_cache_file">删除临时文件</string>
+    <string name="mediastore_intro">
+        这是媒体的示例，通过MediaStore API来获取图片媒体，选前三张显示到下面的3个ImageView上。 下面是实现增删改。\n
+        没有请求READ_EXTERNAL_STORAGE权限时，只能访问本应用在媒体库的文件，请求完权限后，可以访问到全部的图片\n
+        创建一张图片，在getExternalFilesDir()目录中，然后打开相机intent，将此图片Uri传过去，拍照成功后显示图片。
+        媒体库添加一项，将此Uri传递给相机intent，拍照，显示此图片，查看是否添加到媒体库。
+    </string>
+    <string name="mediastore_button_show_images">显示3张缩略图</string>
+    <string name="mediastore_button_show_images_origin">显示3张原图</string>
+    <string name="mediastore_button_take_photo_show">拍照，显示原图</string>
+    <string name="mediastore_button_take_photo_media">拍照，添加到媒体库</string>
 
 </resources>

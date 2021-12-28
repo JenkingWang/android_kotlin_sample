@@ -35,4 +35,14 @@
         android:text="@string/file_button_external_files_dir"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_files_dir" />
+
+    <Button
+        android:id="@+id/btn_media_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/file_button_media"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_external_files_dir" />
 </androidx.constraintlayout.widget.ConstraintLayout>
